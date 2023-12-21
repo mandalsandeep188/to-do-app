@@ -40,13 +40,12 @@
 
 .add-input input {
   outline: none;
-  width: 100%;
-  height: 40px;
+  width: 90%;
+  /* height: 40px; */
   border-radius: 8px;
   padding: 8px;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid lightgray;
-  padding-right: 20px;
 }
 
 .add-input {
@@ -66,8 +65,13 @@
 }
 
 .add-btn {
-  position: absolute;
-  right: 0;
+  width: 10%;
+}
+
+.add-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .del-btn {
@@ -113,11 +117,33 @@ input[type="checkbox"] {
   .task-container {
     width: 90%;
   }
+  .add-form {
+    display: block;
+  }
+  .add-btn {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+  }
+  .add-input input {
+    width: 100%;
+  }
 }
 
 /* Media query for tablet devices */
 @media only screen and (min-width: 501px) and (max-width: 991px) {
   .task-container {
     width: 70%;
+  }
+  .add-form {
+    display: block;
+  }
+  .add-btn {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+  }
+  .add-input input {
+    width: 100%;
   }
 }

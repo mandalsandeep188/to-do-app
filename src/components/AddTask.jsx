@@ -25,6 +25,7 @@ export default function AddTask({ tasks, setTasks }) {
             e.preventDefault();
             addTask();
           }}
+          className="add-form"
         >
           <input
             value={task}
